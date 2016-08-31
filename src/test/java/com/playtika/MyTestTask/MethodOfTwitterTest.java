@@ -14,13 +14,13 @@ public class MethodOfTwitterTest {
     }
 
     @Test
-    public void testGetUserTimeLine() throws Exception {
+      public void testGetUserTimeLine() throws Exception {
         Assert.assertNotNull(methodOfTwitter.getUserTimeLine());
     }
 
     @Test
     public void testGetSendDirectMessage() throws Exception {
-        Assert.assertEquals(false, methodOfTwitter.getSendDirectMessage(124124, "Hello"));
+        Assert.assertEquals(true, methodOfTwitter.getSendDirectMessage(124124, "Hello"));
     }
 
     @Test
